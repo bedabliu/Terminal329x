@@ -93,7 +93,7 @@ public class BeginChatGame : MonoBehaviour {
 		GameObject textPcl1 = Instantiate (prefabTextPc) as GameObject;
 		textPcl1.transform.SetParent (panelChats.transform, false);
 		Transform npcText = panelChats.transform.GetChild(0);
-		textPcl1.transform.localPosition = new Vector3(390f, (-1*(npcText.GetComponent<RectTransform>().rect.height+60)), 0f);
+		textPcl1.transform.localPosition = new Vector3(390f, (-1*(npcText.GetComponent<RectTransform>().rect.height+80)), 0f);
 		textPcl1.GetComponent<Text> ().text = response;
 		textPcl1.GetComponent<UITextTypeWriter> ().animate ();
 		buttonOne.SetActive (false);

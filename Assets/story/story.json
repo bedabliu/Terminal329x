@@ -1,0 +1,34 @@
+{
+  "story": [
+    {
+      "line1":"TTTesting keyboard. 123 OMG!!!",
+      "line2":"Is this piece of junk really working?",
+      "optionOneTextline1":"Yes. I'm here. Who is this?",
+      "optionOneTextline2":"Who is this?",
+      "optionTwoTextline1":"No...",
+      "optionTwoTextline2":"No one's here.",
+      "optionOneway":1,
+      "optiontwoway":2
+    },
+    {
+      "line1":"WHAT? Who are you?",
+      "line2":"A machine, right?",
+      "optionOneTextline1":"No. I'm not.",
+      "optionOneTextline2":"I'm actually talking to you.",
+      "optionTwoTextline1":"Yes. I'm a machine.",
+      "optionTwoTextline2":"And you're not?",
+      "optionOneway":4,
+      "optiontwoway":5
+    },
+    {
+      "line1":"END",
+      "line2":"END",
+      "optionOneTextline1":"No. I'm not.",
+      "optionOneTextline2":"I'm actually talking to you.",
+      "optionTwoTextline1":"Yes. I'm a machine.",
+      "optionTwoTextline2":"And you're not?",
+      "optionOneway":4,
+      "optiontwoway":5
+    }
+  ]
+}

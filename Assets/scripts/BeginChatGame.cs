@@ -70,7 +70,7 @@ public class BeginChatGame : MonoBehaviour {
 			buttonOne.GetComponentInChildren<Text> ().text = story.GetField ("story").list [line].GetField ("optionOneTextline1").str + "\n" + story.GetField ("story").list [line].GetField ("optionOneTextline2").str;
 			buttonTwo.GetComponentInChildren<Text> ().text = story.GetField ("story").list [line].GetField ("optionTwoTextline1").str + "\n" + story.GetField ("story").list [line].GetField ("optionTwoTextline2").str;
 		}
-		yield return new WaitForSeconds (8);
+//		yield return new WaitForSeconds (8);
 		activateButtons ();
 	}
 
@@ -78,13 +78,13 @@ public class BeginChatGame : MonoBehaviour {
 		string response;
 		hasProblemInTheWay = false;
 		if (answer) {
-			if(story.GetField ("story").list [savePoint].GetField ("optionOnewayProblem").i == -1){
+			if((int) story.GetField ("story").list[savePoint].GetField ("optionOnewayProblem").i > 0){
 				hasProblemInTheWay = true;
 			}
 			response = story.GetField ("story").list [savePoint].GetField ("optionOneTextline1").str + "\n" + story.GetField ("story").list [savePoint].GetField ("optionOneTextline2").str;
 			savePoint = (int) story.GetField ("story").list [savePoint].GetField ("optionOneway").i;
 		} else {
-			if(story.GetField ("story").list [savePoint].GetField ("optiontwowayProblem").i == -1){
+			if((int) story.GetField ("story").list [savePoint].GetField ("optiontwowayProblem").i > 0){
 				hasProblemInTheWay = true;
 			}
 			response = story.GetField ("story").list [savePoint].GetField ("optionTwoTextline1").str + "\n" + story.GetField ("story").list [savePoint].GetField ("optionTwoTextline2").str;
@@ -122,6 +122,7 @@ public class BeginChatGame : MonoBehaviour {
 	public void continueTheAdventure(){
 		if (!story.GetField ("story").list [savePoint].GetField ("line1").str.Equals ("")) {
 			buttonContinue.SetActive(false);
+			Debug.Log(hasProblemInTheWay);
 			callNextLines (savePoint, hasProblemInTheWay);
 		}
 	}

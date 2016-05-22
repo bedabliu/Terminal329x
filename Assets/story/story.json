@@ -88,11 +88,11 @@
       "optionOneway": 7,
       "optiontwoway": 99,
       "problem":0,
-      "optionOnewayProblem":-1,
+      "optionOnewayProblem":1,
       "optiontwowayProblem":0
     },
     {
-      "line1": "",
+      "line1": "...",
       "line2": "",
       "optionOneTextline1": "Ashley??? Are you There??",
       "optionOneTextline2": "Are you ok? plz talk to me!!",

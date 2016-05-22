@@ -54,7 +54,7 @@ public class BeginChatGame : MonoBehaviour {
 		textNPCl1.GetComponent<UITextTypeWriter> ().animate ();
 		if (problem) {
 			statusConnection.GetComponent<Text>().text = "Lost...";
-			yield return new WaitForSeconds(10);
+			yield return new WaitForSeconds(20);
 			statusConnection.GetComponent<Text>().text = "Connected";
 		}
 		if (story.GetField ("story").list [line].GetField ("problem").i > 0) {
@@ -70,7 +70,7 @@ public class BeginChatGame : MonoBehaviour {
 			buttonOne.GetComponentInChildren<Text> ().text = story.GetField ("story").list [line].GetField ("optionOneTextline1").str + "\n" + story.GetField ("story").list [line].GetField ("optionOneTextline2").str;
 			buttonTwo.GetComponentInChildren<Text> ().text = story.GetField ("story").list [line].GetField ("optionTwoTextline1").str + "\n" + story.GetField ("story").list [line].GetField ("optionTwoTextline2").str;
 		}
-//		yield return new WaitForSeconds (8);
+		yield return new WaitForSeconds (8);
 		activateButtons ();
 	}
 

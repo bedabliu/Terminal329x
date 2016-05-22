@@ -9,9 +9,9 @@
       "optionTwoTextline2": "No one's here.",
       "optionOneway": 1,
       "optiontwoway": 1,
-      "problem":0,
-      "optionOnewayProblem":0,
-      "optiontwowayProblem":0
+      "problem": 0,
+      "optionOnewayProblem": 0,
+      "optiontwowayProblem": 0
     },
     {
       "line1": "WHAT? Who are you?",
@@ -21,10 +21,10 @@
       "optionTwoTextline1": "Yes. I'm a machine.",
       "optionTwoTextline2": "And you're not?",
       "optionOneway": 2,
-      "optiontwoway": 99,
-      "problem":0,
-      "optionOnewayProblem":0,
-      "optiontwowayProblem":0
+      "optiontwoway": 2,
+      "problem": 0,
+      "optionOnewayProblem": 0,
+      "optiontwowayProblem": 0
     },
     {
       "line1": "OMG. Don't believe this junk is working.",
@@ -34,10 +34,10 @@
       "optionTwoTextline1": "Sry. don't give my real name on the net.",
       "optionTwoTextline2": "Just call me Jack.",
       "optionOneway": 3,
-      "optiontwoway": 99,
-      "problem":0,
-      "optionOnewayProblem":0,
-      "optiontwowayProblem":0
+      "optiontwoway": 3,
+      "problem": 0,
+      "optionOnewayProblem": 0,
+      "optiontwowayProblem": 0
     },
     {
       "line1": "I just found an old smartphone here.",
@@ -48,9 +48,9 @@
       "optionTwoTextline2": "",
       "optionOneway": 99,
       "optiontwoway": 99,
-      "problem":4,
-      "optionOnewayProblem":0,
-      "optiontwowayProblem":0
+      "problem": 4,
+      "optionOnewayProblem": 0,
+      "optiontwowayProblem": 0
     },
     {
       "line1": "Oh Shit... I think I heard a motorcycle!",
@@ -60,10 +60,10 @@
       "optionTwoTextline1": "Ashley are you there?",
       "optionTwoTextline2": "Are you ok?",
       "optionOneway": 5,
-      "optiontwoway": 99,
-      "problem":0,
-      "optionOnewayProblem":0,
-      "optiontwowayProblem":0
+      "optiontwoway": 5,
+      "problem": 0,
+      "optionOnewayProblem": 0,
+      "optiontwowayProblem": 0
     },
     {
       "line1": "I'm still here. There a fuss outside. I think It's a gang of Rikers...",
@@ -73,10 +73,10 @@
       "optionTwoTextline1": "Rikers??",
       "optionTwoTextline2": "Are you Sure???",
       "optionOneway": 6,
-      "optiontwoway": 99,
-      "problem":0,
-      "optionOnewayProblem":0,
-      "optiontwowayProblem":0
+      "optiontwoway": 6,
+      "problem": 0,
+      "optionOnewayProblem": 0,
+      "optiontwowayProblem": 0
     },
     {
       "line1": "Rikers are really bad people. If they cath me... I...",
@@ -86,36 +86,127 @@
       "optionTwoTextline1": "If they are so danger as you say...",
       "optionTwoTextline2": "Just call the cops and hide and be as quiet like a dead.",
       "optionOneway": 7,
-      "optiontwoway": 99,
-      "problem":0,
-      "optionOnewayProblem":1,
-      "optiontwowayProblem":0
+      "optiontwoway": 7,
+      "problem": 0,
+      "optionOnewayProblem": 1,
+      "optiontwowayProblem": 0
     },
     {
-      "line1": "...",
+      "line1": "Connection Lost...",
       "line2": "",
       "optionOneTextline1": "Ashley??? Are you There??",
       "optionOneTextline2": "Are you ok? plz talk to me!!",
       "optionTwoTextline1": "Hey?? Are you still alive??",
       "optionTwoTextline2": "Don't make fun with things like this...",
       "optionOneway": 8,
-      "optiontwoway": 99,
-      "problem":0,
-      "optionOnewayProblem":0,
-      "optiontwowayProblem":0
+      "optiontwoway": 8,
+      "problem": 0,
+      "optionOnewayProblem": 0,
+      "optiontwowayProblem": 0
     },
     {
       "line1": "I'm here. Sorry for the delay to response. I couldn't run out.",
       "line2": "My legs started to shake and I hide. Maybe for the best. I hear some terryfying sounds outside.",
-      "optionOneTextline1": "",
-      "optionOneTextline2": "",
+      "optionOneTextline1": "Ashiley are you there? ... Are you ok? ... Plz talk to me!!",
+      "optionOneTextline2": "Ash... Talk to me!",
       "optionTwoTextline1": "",
       "optionTwoTextline2": "",
       "optionOneway": 9,
+      "optiontwoway": 9,
+      "problem": 0,
+      "optionOnewayProblem": 0,
+      "optiontwowayProblem": 0
+    },
+    {
+      "line1": "I'm here. Sorry for the delay to response. I couldn't run out.",
+      "line2": "My legs started to shake and I hide. Maybe for the best. I hear some terryfying sounds outside.",
+      "optionOneTextline1": "Ok, the important is that you are well. But what the hell are happening there?",
+      "optionOneTextline2": "",
+      "optionTwoTextline1": "Don't worry, but where are you? Who are those Rikes?",
+      "optionTwoTextline2": "",
+      "optionOneway": 10,
+      "optiontwoway": 11,
+      "problem": 0,
+      "optionOnewayProblem": 0,
+      "optiontwowayProblem": 0
+    },
+    {
+      "line1": "I gonne over here to get some supplies for my group.",
+      "line2": " Here are a danger zone, but is almost the only place we can still find something.",
+      "optionOneTextline1": "What are you gonna do now?",
+      "optionOneTextline2": "",
+      "optionTwoTextline1": "It seems tough. Are safe over there now?",
+      "optionTwoTextline2": "",
+      "optionOneway": 12,
+      "optiontwoway": 13,
+      "problem": 0,
+      "optionOnewayProblem": 0,
+      "optiontwowayProblem": 0
+    },
+    {
+      "line1": "I'm at what left from the nearby city around. But there's a gang of awful people, ruling the place. ",
+      "line2": "And those people are the Rikes.",
+      "optionOneTextline1": "What are you gonna do now?",
+      "optionOneTextline2": "",
+      "optionTwoTextline1": "It seems tough. Are safe over there now?",
+      "optionTwoTextline2": "",
+      "optionOneway": 12,
+      "optiontwoway": 13,
+      "problem": 0,
+      "optionOnewayProblem": 0,
+      "optiontwowayProblem": 0
+    },
+    {
+      "line1": "I still need to get supplies. Seems to be safe to go now. I just don't know where I gonna search now.",
+      "line2": "From what I can see around by the window, I can go to a residential build or a little market. What you think is the best to go.",
+      "optionOneTextline1": "Go to the market, is presumably to has more supplies.",
+      "optionOneTextline2": "",
+      "optionTwoTextline1": "Go to the building, is safer to go",
+      "optionTwoTextline2": "",
+      "optionOneway": 14,
+      "optiontwoway": 14,
+      "problem": 0,
+      "optionOnewayProblem": 0,
+      "optiontwowayProblem": 0
+    },
+    {
+      "line1": "Seems to be safe now. I still need to get supplies. But I just don't know where I gonna search now.",
+      "line2": "From what I can see around by the window, I can go to a residential build or a little market. What you think is the best to go.",
+      "optionOneTextline1": "Go to the market, is presumably to has more supplies.",
+      "optionOneTextline2": "",
+      "optionTwoTextline1": "Go to the building, is safer to go",
+      "optionTwoTextline2": "",
+      "optionOneway": 14,
+      "optiontwoway": 14,
+      "problem": 0,
+      "optionOnewayProblem": 0,
+      "optiontwowayProblem": 0
+    },
+    {
+      "line1": "Ok, I gonna try it. I contact you in a while ...",
+      "line2": "I hope",
+      "optionOneTextline1": "Continue",
+      "optionOneTextline2": "",
+      "optionTwoTextline1": "Continue",
+      "optionTwoTextline2": "",
+      "optionOneway": 15,
+      "optiontwoway": 15,
+      "problem": 0,
+      "optionOnewayProblem": 0,
+      "optiontwowayProblem": 0
+    },
+    {
+      "line1": "... Continue on next episode ...",
+      "line2": "",
+      "optionOneTextline1": "Thank you",
+      "optionOneTextline2": "",
+      "optionTwoTextline1": "Great game",
+      "optionTwoTextline2": "",
+      "optionOneway": 99,
       "optiontwoway": 99,
-      "problem":0,
-      "optionOnewayProblem":0,
-      "optiontwowayProblem":0
+      "problem": 0,
+      "optionOnewayProblem": 0,
+      "optiontwowayProblem": 0
     }
   ]
 }

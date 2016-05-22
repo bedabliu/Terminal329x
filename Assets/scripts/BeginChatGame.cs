@@ -42,9 +42,7 @@ public class BeginChatGame : MonoBehaviour {
 	}
 
 	IEnumerator instantiateNewLines(int line, bool problem){
-		buttonOne.SetActive (true);
-		buttonTwo.SetActive (true);
-		buttonContinue.SetActive (false);
+		desactivateButtons ();
 		int childs = panelChats.transform.childCount;
 		for (int i = childs - 1; i >= 0; i--)
 		{
@@ -60,16 +58,20 @@ public class BeginChatGame : MonoBehaviour {
 			statusConnection.GetComponent<Text>().text = "Connected";
 		}
 		if (story.GetField ("story").list [line].GetField ("problem").i > 0) {
-			buttonOne.GetComponentInChildren<Text> ().text = "";
-			buttonTwo.GetComponentInChildren<Text> ().text = "";
 			buttonOne.SetActive(false);
 			buttonTwo.SetActive(false);
 			yield return new WaitForSeconds(10);
+			savePoint = (int) story.GetField ("story").list [line].GetField ("problem").i;
 			callNextLines((int) story.GetField ("story").list [line].GetField ("problem").i, true);
 		} else {
+			buttonOne.SetActive (true);
+			buttonTwo.SetActive (true);
+			buttonContinue.SetActive (false);
 			buttonOne.GetComponentInChildren<Text> ().text = story.GetField ("story").list [line].GetField ("optionOneTextline1").str + "\n" + story.GetField ("story").list [line].GetField ("optionOneTextline2").str;
 			buttonTwo.GetComponentInChildren<Text> ().text = story.GetField ("story").list [line].GetField ("optionTwoTextline1").str + "\n" + story.GetField ("story").list [line].GetField ("optionTwoTextline2").str;
 		}
+		yield return new WaitForSeconds (8);
+		activateButtons ();
 	}
 
 	void instantiateAnswer(bool answer){
@@ -91,7 +93,7 @@ public class BeginChatGame : MonoBehaviour {
 		GameObject textPcl1 = Instantiate (prefabTextPc) as GameObject;
 		textPcl1.transform.SetParent (panelChats.transform, false);
 		Transform npcText = panelChats.transform.GetChild(0);
-		textPcl1.transform.localPosition = new Vector3(390f, (-1*(npcText.GetComponent<RectTransform>().rect.height+30)), 0f);
+		textPcl1.transform.localPosition = new Vector3(390f, (-1*(npcText.GetComponent<RectTransform>().rect.height+60)), 0f);
 		textPcl1.GetComponent<Text> ().text = response;
 		textPcl1.GetComponent<UITextTypeWriter> ().animate ();
 		buttonOne.SetActive (false);
@@ -107,8 +109,19 @@ public class BeginChatGame : MonoBehaviour {
 		instantiateAnswer (false);
 	} 
 
+	public void activateButtons(){
+		buttonOne.GetComponent<Button>().interactable = true;
+		buttonTwo.GetComponent<Button>().interactable = true;
+	}
+
+	public void desactivateButtons(){
+		buttonOne.GetComponent<Button>().interactable = false;
+		buttonTwo.GetComponent<Button>().interactable = false;
+	}
+
 	public void continueTheAdventure(){
 		if (!story.GetField ("story").list [savePoint].GetField ("line1").str.Equals ("")) {
+			buttonContinue.SetActive(false);
 			callNextLines (savePoint, hasProblemInTheWay);
 		}
 	}
